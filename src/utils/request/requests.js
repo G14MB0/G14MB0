@@ -1,6 +1,14 @@
-// This is a basic example of fetching an fetchApi.
 
 export default async function fetchApi(method, url, port, path, body = null) {
+  // **************************************************************************************** //
+  // This method is blocked here since this is a presentation Repo and no server is running!!!!!
+  // **************************************************************************************** //
+
+  return []
+
+   // **************************************************************************************** //
+  // This method is blocked here since this is a presentation Repo and no server is running!!!!!
+  // **************************************************************************************** //
   const fullUrl = `http://${url}:${port}/${path}`;
 
   const headers = {

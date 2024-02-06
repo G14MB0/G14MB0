@@ -2,10 +2,7 @@ import React, { memo, useState } from 'react';
 import { Handle, Position } from 'reactflow';
 import { useContext } from 'react';
 import { useEffect } from 'react';
-import Dropdown from '../../../UI/dropdown/Dropdown';
 import { AppContext } from '../../../../provider/appProvider';
-import fetchApi from '../../../../utils/request/requests';
-import { PublicRounded } from '@mui/icons-material';
 import SimpleEditor from '../../../editor/SimpleEditor';
 
 
@@ -26,7 +23,6 @@ const initialPythonCode = `def FunctionDemuxer(data=None):
 export default memo(({ data, isConnectable, updateNodeData }) => {
 
     const { setOverlayComponent, setOverlay, setSave, save, isDebug } = useContext(AppContext)
-    const [code, setCode] = useState(data.code);
     const [replacementKey, setReplacementKey] = useState(data.replacementKey);
 
     const handleOpenEditor = (e) => {

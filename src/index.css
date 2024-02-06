@@ -32,30 +32,3 @@
 }
 
 
-@keyframes gradientAnimation {
-    0% {
-        background: linear-gradient(to right, purple, pink);
-    }
-
-    50% {
-        background: linear-gradient(to right, cyan, blue);
-    }
-
-    100% {
-        background: linear-gradient(to right, purple, pink);
-    }
-}
-
-.animated-gradient {
-    animation: background 10s ease-in-out;
-    height: 100vh;
-    /* Full height of the viewport */
-    width: 100%;
-    /* Full width */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 24px;
-    text-align: center;
-}

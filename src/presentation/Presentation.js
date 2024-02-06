@@ -1,10 +1,17 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Header from './components/Header'
 
-export default function Presentation() {
+function Presentation() {
+    useEffect(() => {
+        console.log("presentation")
+    }, [])
+
     return (
-        <div className='w-full flex items-center'>
+        <div key={"Presentation"} className='w-full flex items-center '>
             <Header />
         </div>
     )
 }
+
+
+export default React.memo(Presentation);

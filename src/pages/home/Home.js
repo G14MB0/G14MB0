@@ -17,7 +17,7 @@ export default function Home() {
   // }, []);
 
   return (
-    <div className={"main dark:bg-slate-950"}>
+    <div className="main bg-slate-50 dark:bg-slate-950">
       <div className="aspect-[7/4] dark:bg-slate-950">
         <iframe src={iframeSrc} frameborder='0' width='100%' height='100%'></iframe>
       </div>

@@ -2,6 +2,15 @@ import { Position, internalsSymbol } from 'reactflow';
 import fetchApi from '../../utils/request/requests';
 
 export function openWs(localServerUrl, localServerPort, setWs, setMessage, setIsRunning) {
+    // **************************************************************************************** //
+    // This method is blocked here since this is a presentation Repo and no server is running!!!!!
+    // **************************************************************************************** //
+
+    return
+
+    // **************************************************************************************** //
+    // This method is blocked here since this is a presentation Repo and no server is running!!!!!
+    // **************************************************************************************** //
     // Initialize the WebSocket connection
 
     const webSocket = new WebSocket(
@@ -37,6 +46,15 @@ export function openWs(localServerUrl, localServerPort, setWs, setMessage, setIs
 }
 
 export function closeWs(ws, setWs) {
+    // **************************************************************************************** //
+    // This method is blocked here since this is a presentation Repo and no server is running!!!!!
+    // **************************************************************************************** //
+
+    return
+
+    // **************************************************************************************** //
+    // This method is blocked here since this is a presentation Repo and no server is running!!!!!
+    // **************************************************************************************** //
     if (ws) {
         ws.close();
         setWs(null)

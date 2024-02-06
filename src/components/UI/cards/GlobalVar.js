@@ -5,9 +5,11 @@ import { AppContext } from '../../../provider/appProvider';
 import Confirm from '../../overlay/confirm';
 import { AddRounded, DeleteRounded } from '@mui/icons-material';
 
+const gv = {example : 5}
+
 export default function GlobalVar() {
     const { localServerUrl, localServerPort, setOverlay, setOverlayComponent, componentReload, setComponentReload } = useContext(AppContext);
-    const [globalVars, setGlobalVars] = useState([])
+    const [globalVars, setGlobalVars] = useState(gv)
     const [changedSettings, setChangedSettings] = useState({});
     const [reloadLocal, setReloadLocal] = useState(false)
     const [newGv, setNewGv] = useState("")
@@ -51,7 +53,6 @@ export default function GlobalVar() {
                 props: {},
             });
             const data = { name: name }
-            console.log(data)
             await fetchApi(
                 "POST",
                 localServerUrl,
@@ -81,7 +82,8 @@ export default function GlobalVar() {
     useEffect(() => {
         fetchApi("GET", localServerUrl, localServerPort, `nodes/globalvar`).then(
             (response) => {
-                setGlobalVars(response);
+                // setGlobalVars(response);
+                setGlobalVars(gv);
                 setChangedSettings({});
             }
         );

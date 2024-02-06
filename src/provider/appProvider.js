@@ -1,4 +1,4 @@
-import React, { createContext, useEffect, useState } from "react";
+import React, { createContext, useEffect, useLayoutEffect, useRef, useState } from "react";
 import Home from "../pages/home/Home";
 import Studio from "../pages/Studio/Studio";
 import Setting from "../pages/setting/Setting";
@@ -6,6 +6,8 @@ import Header from "../components/Header";
 
 import FullOverlay from "../components/overlay/FullOverlay";
 import { ReactFlowProvider, useEdgesState, useNodesState } from "reactflow";
+import Presentation from "../presentation/Presentation";
+import { debounce } from "@mui/material";
 
 
 export const AppContext = createContext();
@@ -63,6 +65,9 @@ export default function AppProvider() {
   const [isDark, setIsDark] = useState({});
 
 
+
+
+
   //sono tutte le mie 'pagine'
   const cmpByState = {
     Home: <Home />,
@@ -70,53 +75,68 @@ export default function AppProvider() {
     Settings: <Setting />
   };
 
+
+
+  // useEffect(() => {
+  //   console.log(ref.current.offsetTop)
+  //   ref.current.offsetTop != 0 &&
+  //   window.scrollTo(0, ref.current.offsetTop)
+  // }, [appState]);
+
   return (
     // Defined the ReactFlowProvider Here to have access to its state everywhere in the appContext
-    <div>
-      <ReactFlowProvider>
-        <AppContext.Provider
-          value={{
-            appState,
-            setAppState,
-            isLogged,
-            setIsLogged,
-            reload,
-            setReload,
-            openLogin,
-            setOpenLogin,
-            OpenSignUp,
-            setOpenSignUp,
-            localServerUrl,
-            setLocalServerUrl,
-            localServerPort,
-            setLocalServerPort,
-            overlay,
-            setOverlay,
-            overlayComponent,
-            setOverlayComponent,
-            save,
-            setSave,
-            fileUsed, setFileUsed,
-            sideBarReload, setSideBarReload,
-            componentReload, setComponentReload,
-            isDebug, setIsDebug,
-            setIsRunning, isRunning,
-            nodes, setNodes, onNodesChange,
-            edges, setEdges, onEdgesChange,
-            history, setHistory,
-            globalWs, setGlobalWs,
-            activeNode, setActiveNode,
-            isDark, setIsDark,
-          }}
-        >
-          <Header />
-          <FullOverlay
-            Component={overlayComponent.Component}
-            {...overlayComponent.props}
-          />
-          {cmpByState[appState]}
-        </AppContext.Provider>
-      </ReactFlowProvider>
+    <div className="overflow-scroll scolatela h-[100vh]">
+      <div className="h-[600px]">
+        <Presentation />
+      </div>
+      <div id="VisualCoding" className="h-[800px] bg-gradient-to-r from-purple-700 to-pink-700 py-20 ">
+        <div className=" max-w-[1000px] mx-auto rounded-xl overflow-hidden mb-5 ring ring-indigo-500">
+          <ReactFlowProvider>
+            <AppContext.Provider
+              value={{
+                appState,
+                setAppState,
+                isLogged,
+                setIsLogged,
+                reload,
+                setReload,
+                openLogin,
+                setOpenLogin,
+                OpenSignUp,
+                setOpenSignUp,
+                localServerUrl,
+                setLocalServerUrl,
+                localServerPort,
+                setLocalServerPort,
+                overlay,
+                setOverlay,
+                overlayComponent,
+                setOverlayComponent,
+                save,
+                setSave,
+                fileUsed, setFileUsed,
+                sideBarReload, setSideBarReload,
+                componentReload, setComponentReload,
+                isDebug, setIsDebug,
+                setIsRunning, isRunning,
+                nodes, setNodes, onNodesChange,
+                edges, setEdges, onEdgesChange,
+                history, setHistory,
+                globalWs, setGlobalWs,
+                activeNode, setActiveNode,
+                isDark, setIsDark,
+              }}
+            >
+              <Header />
+              <FullOverlay
+                Component={overlayComponent.Component}
+                {...overlayComponent.props}
+              />
+              {cmpByState[appState]}
+            </AppContext.Provider>
+          </ReactFlowProvider>
+        </div>
+      </div>
     </div>
   );
 }

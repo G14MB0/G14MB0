@@ -29,7 +29,6 @@ export default function ButtonMain({
 
 	useEffect(() => {
 		setProgress(buttonProgress);
-		console.log(buttonProgress);
 	}, [buttonProgress]);
 
 	return (

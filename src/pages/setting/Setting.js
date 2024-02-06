@@ -119,7 +119,7 @@ export default function Setting() {
   }, []);
 
   return (
-    <div className="dark:bg-slate-900 w-full aspect-[7/4] pt-4">
+    <div className="bg-slate-50 dark:bg-slate-900 w-full aspect-[7/4] pt-4">
       <div className="max-w-[1000px] mx-auto ">
         <div className="w-full px-5 mb-4 border-y h-8 flex items-center justify-end">
           <FolderCopyOutlined

@@ -51,7 +51,7 @@ export default () => {
 
 
     return (
-        <aside className='dark:bg-slate-900 shadow-customwhite z-10 scolatela overflow-y-scroll'>
+        <aside className='bg-slate-50 dark:bg-slate-900 shadow-customwhite z-10 scolatela overflow-y-scroll'>
             <div className="w-full px-2 py-1 font-semibold dark:text-white">Default Nodes</div>
             <div className='flex flex-wrap'>
                 {Object.entries(availableNode).filter(([, value]) => value.category === "default").map(([element, value], key) => (
