@@ -1,0 +1,87 @@
+{
+  "homepage": "https://G14MB0.github.io/G14MB0",
+  "name": "visualcoding",
+  "productName": "visualcoding",
+  "author": "Gianmaria Castaldini",
+  "description": "Let the flow be with you!",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@electron/remote": "^2.0.9",
+    "@headlessui/react": "^1.7.14",
+    "@headlessui/tailwindcss": "^0.1.3",
+    "@material-tailwind/react": "^2.1.8",
+    "@mui/icons-material": "^5.15.3",
+    "@mui/material": "^5.15.3",
+    "@tailwindcss/forms": "^0.5.7",
+    "axios": "^0.24.0",
+    "bonjour": "^3.5.0",
+    "codemirror": "^6.0.1",
+    "electron-is-dev": "^2.0.0",
+    "electron-remote": "^1.3.0",
+    "electron-updater": "^6.1.7",
+    "elkjs": "^0.9.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "^5.0.1",
+    "react-toggle-dark-mode": "^1.1.1",
+    "reactflow": "^11.10.2",
+    "tree-kill": "^1.2.2"
+  },
+  "scripts": {
+    "start": "set PORT=12346 && react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "electron:serve": "concurrently -k \"cross-env BROWSER=none npm run start\" \"npm run electron:start\" ",
+    "electron:build": "electron-builder -c.extraMetadata.main=build/main.js",
+    "electron:start": "electron ./public/main.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "build": {
+    "appId": "1234567890",
+    "files": [
+      "dist/**/*",
+      "build/**/*",
+      "node_modules/**/*",
+      "preload.js",
+      "package.json",
+      "tailwind.config.js"
+    ],
+    "win": {
+      "icon": "public/logo.png"
+    },
+    "extraResources": [
+      "server/**/*"
+    ],
+    "directories": {
+      "buildResources": "assets"
+    }
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.1",
+    "cross-env": "^7.0.3",
+    "electron": "^23.2.1",
+    "electron-builder": "^23.6.0",
+    "tailwindcss": "^3.4.1"
+  }
+}
