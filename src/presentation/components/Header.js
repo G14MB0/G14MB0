@@ -12,10 +12,10 @@ export default function Header() {
 
 
     return (
-        <div key={"presentation-header"} className='w-full h-[1200px] sm:h-[600px] flex flex-col sm:flex-row justify-around '>
+        <div key={"presentation-header"} className='w-full h-[1000px] sm:h-[600px] flex flex-col sm:flex-row justify-around '>
             <div className="relative px-6  lg:px-8">
                 <div
-                    className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-2xl sm:-top-80"
+                    className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-xl sm:-top-80"
                     aria-hidden="true"
                 >
                     <div
@@ -60,7 +60,7 @@ export default function Header() {
                     </div>
                 </div>
                 <div
-                    className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
+                    className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-xl sm:top-[calc(100%-35rem)]"
                     aria-hidden="true"
                 >
                     <div
@@ -73,14 +73,17 @@ export default function Header() {
                 </div>
             </div>
             <div class="relative">
-                <div class="absolute inset-0 bg-gradient-to-br from-pink-500 to-purple-800 my-40 blur-xl"></div>
-                <div class="flex items-center justify-center sm:px-24 h-[600px]">
-                    <div class="relative z-10 bg-white font-semibold text-center rounded-3xl border shadow-lg p-10 max-w-xs">
+                <div class="absolute inset-0 bg-gradient-to-br from-pink-500 to-purple-800 sm:my-40 blur-xl "></div>
+                <div class="flex items-center justify-center sm:px-24 sm:h-[600px]">
+                    <div class="relative z-10 bg-white font-semibold text-center rounded-3xl border shadow-lg p-10 max-w-xs min-w-[200px]">
                         <img class="mb-3 w-32 h-32 rounded-full shadow-lg mx-auto object-fit" src={profilePictures} alt="product designer" />
                         <h1 class="text-lg text-gray-700">Gianmaria Castaldini</h1>
                         <h3 class="text-sm text-gray-400">Software Engineer</h3>
-                        <p class="text-xs text-gray-400 mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <button class="bg-indigo-600 px-8 py-2 mt-8 rounded-3xl text-gray-100 font-semibold uppercase tracking-wide">Hire Me</button>
+                        <p class="text-xs text-gray-400 mt-4">
+                            Dynamic Full Stack Developer & Software Engineer. Tech-savvy, innovative, driven.</p>
+                        <div className='mt-8 bg-indigo-600 px-8 py-2  rounded-3xl'>
+                            <a class=" text-gray-100 font-semibold uppercase " href="mailto:castaldini.gianmaria@gmail.com?subject=Texting from Github...">Hire Me</a>
+                        </div>
                     </div>
                 </div>
             </div>

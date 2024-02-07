@@ -9,6 +9,8 @@ import { ReactFlowProvider, useEdgesState, useNodesState } from "reactflow";
 import Presentation from "../presentation/Presentation";
 import { debounce } from "@mui/material";
 import ImageWithText from "../presentation/components/ImageWithText";
+import { ScreenRotationRounded } from "@mui/icons-material";
+import TechFeatures from "../presentation/components/TechFeatures";
 
 
 export const AppContext = createContext();
@@ -77,23 +79,45 @@ export default function AppProvider() {
   };
 
 
+  const [show, setShow] = useState(false);
+  const scrollDivRef = useRef(null);
 
-  // useEffect(() => {
-  //   console.log(ref.current.offsetTop)
-  //   ref.current.offsetTop != 0 &&
-  //   window.scrollTo(0, ref.current.offsetTop)
-  // }, [appState]);
+  const handleScroll = () => {
+    if (scrollDivRef.current.scrollTop > 500 && scrollDivRef.current.scrollTop < 1200) { // Use scrollTop of the div
+      setShow(true);
+    } else {
+      setShow(false);
+    }
+  };
+
+  useEffect(() => {
+    const scrollDiv = scrollDivRef.current;
+    if (scrollDiv) {
+      scrollDiv.addEventListener('scroll', handleScroll);
+    }
+  }, []);
 
   return (
     // Defined the ReactFlowProvider Here to have access to its state everywhere in the appContext
-    <div className="overflow-scroll scolatela h-[100vh]">
-      <div className="h-[1200px] sm:h-[600px]">
+    <div ref={scrollDivRef} className="overflow-scroll scolatela h-[100vh]">
+      <div className="h-[1100px] sm:h-[600px]">
         <Presentation />
       </div>
       <div className="sm:my-[250px]">
-        <div id="VisualCoding" className="sm:h-[600px] bg-gradient-to-bl from-purple-900 to-blue-700 py-20 flex items-center justify-center">
-          {/* <span className="w-full sm:h-[600px]"></span> */}
-          <div className=" max-w-[1400px] mx-auto rounded-xl overflow-hidden mb-5 ring ring-indigo-500 w-full mx-2 sm:mx-10">
+        <div className="sm:h-[400px]  bg-gradient-to-bl from-purple-900 to-blue-700 py-20 flex items-center justify-center relative">
+          <span className="absolute backdrop-blur-xl top-[-100px] w-full  sm:h-[600px]"></span>
+          <div className={`hidden sm:block fixed mx-4 text-center top-8 p-1 px-6 z-50 bg-indigo-700 text-gray-200  text-sm rounded-full shadow-lg transition-opacity duration-500 ${show ? 'opacity-80' : 'opacity-0'}`}>
+            {show &&
+              <>
+                This is a demonstration version and requires integration with its backend to function fully!
+                <a href="https://github.com/G14MB0/VisualCoding_backend_public" className=" pl-2 font-semibold text-indigo-200">
+                  <span className="absolute inset-0" aria-hidden="true" />
+                  Discover More <span aria-hidden="true">&rarr;</span>
+                </a>
+              </>
+            }
+          </div>
+          <div id="VisualCoding" className="z-10 max-w-[1100px] mx-auto rounded-xl overflow-hidden ring ring-indigo-500 w-full mx-2 sm:mx-10 hidden sm:block">
             <ReactFlowProvider>
               <AppContext.Provider
                 value={{
@@ -139,10 +163,26 @@ export default function AppProvider() {
               </AppContext.Provider>
             </ReactFlowProvider>
           </div>
+          <div className="sm:hidden">
+            <div className='m-0 flex flex-col items-center justify-center'>
+              <div className="text-center sm:text-right">
+                <h1 className="text-4xl font-bold tracking-tight text-gray-200 sm:text-4xl ">
+                  Optimized for Big Screen.
+                </h1>
+                <p className="mt-6 text-lg leading-8 text-gray-300">
+                  our platform transforms programming into a unique visual experience: build, create, and connect without writing a single line of code, exclusively on expansive screens.
+                </p>
+                <div className="text-gray-200 mt-8 animate-bounce">
+                  <ScreenRotationRounded />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div className="h-full">
         <ImageWithText />
+        <TechFeatures />
       </div>
     </div>
   );

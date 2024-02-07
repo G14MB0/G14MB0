@@ -198,8 +198,8 @@ body {
 }
 
 .scolatela::-webkit-scrollbar {
-    width: 6px;
-    height: 6px;
+    width: 8px;
+    height: 8px;
 }
 
 .scolatela::-webkit-scrollbar-thumb {

@@ -56,7 +56,7 @@ export default () => {
             <div className='flex flex-wrap'>
                 {Object.entries(availableNode).filter(([, value]) => value.category === "default").map(([element, value], key) => (
                     <div key={key}
-                        className={`flex items-center justify-center w-24 text-align-center h-12 shadow-sm hover:origin-top-left hover:-rotate-2 transition-all cursor-grab rounded m-2`}
+                        className={`flex items-center justify-center w-20 text-align-center h-12 shadow-sm hover:origin-top-left hover:-rotate-2 transition-all cursor-grab rounded m-2`}
                         style={{ backgroundColor: nodeStyles[element]['backgroundColor'] }}
                         onDragStart={(event) => onDragStart(event, element, null, JSON.stringify(nodeStyles[element]))}
                         draggable>
