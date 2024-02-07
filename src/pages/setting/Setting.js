@@ -22,6 +22,12 @@ const titleArray = {
     "Path of the email template. See docs to know how to edit or create a new template",
 };
 
+
+const initialSettings = {
+  "example": 56,
+  "second Example": "user@gmail.com"
+}
+
 export default function Setting() {
   const {
     localServerUrl,
@@ -30,8 +36,8 @@ export default function Setting() {
     setOverlayComponent,
   } = useContext(AppContext);
 
-  const [settings, setSettings] = useState({});
-  const [changedSettings, setChangedSettings] = useState({});
+  const [settings, setSettings] = useState(initialSettings);
+  const [changedSettings, setChangedSettings] = useState(initialSettings);
 
   // const handleSendTemplate = (e) => {
   //   setOverlay(true);
@@ -89,7 +95,8 @@ export default function Setting() {
     }
     setOverlay(false);
     // Reset changedSettings after all updates are made
-    setChangedSettings({});
+    // setChangedSettings({});
+    setChangedSettings(initialSettings)
   };
 
   const handleInputChange = (e) => {
@@ -112,8 +119,11 @@ export default function Setting() {
   useEffect(() => {
     fetchApi("GET", localServerUrl, localServerPort, `setting`).then(
       (response) => {
-        setSettings(response);
-        setChangedSettings({});
+        // setSettings(response);
+        // setChangedSettings({});
+
+        setSettings(initialSettings)
+        setChangedSettings(initialSettings)
       }
     );
   }, []);

@@ -12,10 +12,10 @@ export default function FullOverlay({ Component, ...props }) {
     <>
       <div
         aria-live="assertive"
-        className={`z-[9999999] pointer-events-none fixed inset-0 flex items-end px-4 py-6 mt-[40px] sm:items-start sm:p-6 ${overlay ? "backdrop-blur-lg" : ""
+        className={`z-[9999999] pointer-events-none fixed inset-0 flex items-end px-4 py-6  sm:items-start sm:p-6 ${overlay ? "backdrop-blur-lg" : ""
           }`}
       >
-        <div className="flex w-full h-[95%] flex-col items-center space-y-12 my-4">
+        <div className="flex w-full h-[100%] flex-col items-center space-y-12 my-4">
           <Transition
             show={overlay}
             as={Fragment}
@@ -38,7 +38,7 @@ export default function FullOverlay({ Component, ...props }) {
                 >
                   <span className="sr-only">Close</span>
                   <Close
-                    className="h-4 w-4  z-[999999999] rounded-full opacity-80 text-gray-900 dark:text-gray-50 "
+                    className="h-4 w-4  z-[999999999] rounded-full opacity-80 text-gray-900 dark:text-gray-50 dark:bg-slate-500 "
                     aria-hidden="true"
                   />
                 </button>

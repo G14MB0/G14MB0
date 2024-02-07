@@ -8,6 +8,7 @@ import FullOverlay from "../components/overlay/FullOverlay";
 import { ReactFlowProvider, useEdgesState, useNodesState } from "reactflow";
 import Presentation from "../presentation/Presentation";
 import { debounce } from "@mui/material";
+import ImageWithText from "../presentation/components/ImageWithText";
 
 
 export const AppContext = createContext();
@@ -86,56 +87,62 @@ export default function AppProvider() {
   return (
     // Defined the ReactFlowProvider Here to have access to its state everywhere in the appContext
     <div className="overflow-scroll scolatela h-[100vh]">
-      <div className="h-[600px]">
+      <div className="h-[1200px] sm:h-[600px]">
         <Presentation />
       </div>
-      <div id="VisualCoding" className="h-[800px] bg-gradient-to-r from-purple-700 to-pink-700 py-20 ">
-        <div className=" max-w-[1000px] mx-auto rounded-xl overflow-hidden mb-5 ring ring-indigo-500">
-          <ReactFlowProvider>
-            <AppContext.Provider
-              value={{
-                appState,
-                setAppState,
-                isLogged,
-                setIsLogged,
-                reload,
-                setReload,
-                openLogin,
-                setOpenLogin,
-                OpenSignUp,
-                setOpenSignUp,
-                localServerUrl,
-                setLocalServerUrl,
-                localServerPort,
-                setLocalServerPort,
-                overlay,
-                setOverlay,
-                overlayComponent,
-                setOverlayComponent,
-                save,
-                setSave,
-                fileUsed, setFileUsed,
-                sideBarReload, setSideBarReload,
-                componentReload, setComponentReload,
-                isDebug, setIsDebug,
-                setIsRunning, isRunning,
-                nodes, setNodes, onNodesChange,
-                edges, setEdges, onEdgesChange,
-                history, setHistory,
-                globalWs, setGlobalWs,
-                activeNode, setActiveNode,
-                isDark, setIsDark,
-              }}
-            >
-              <Header />
-              <FullOverlay
-                Component={overlayComponent.Component}
-                {...overlayComponent.props}
-              />
-              {cmpByState[appState]}
-            </AppContext.Provider>
-          </ReactFlowProvider>
+      <div className="sm:my-[250px]">
+        <div id="VisualCoding" className="sm:h-[600px] bg-gradient-to-bl from-purple-900 to-blue-700 py-20 flex items-center justify-center">
+          {/* <span className="w-full sm:h-[600px]"></span> */}
+          <div className=" max-w-[1400px] mx-auto rounded-xl overflow-hidden mb-5 ring ring-indigo-500 w-full mx-2 sm:mx-10">
+            <ReactFlowProvider>
+              <AppContext.Provider
+                value={{
+                  appState,
+                  setAppState,
+                  isLogged,
+                  setIsLogged,
+                  reload,
+                  setReload,
+                  openLogin,
+                  setOpenLogin,
+                  OpenSignUp,
+                  setOpenSignUp,
+                  localServerUrl,
+                  setLocalServerUrl,
+                  localServerPort,
+                  setLocalServerPort,
+                  overlay,
+                  setOverlay,
+                  overlayComponent,
+                  setOverlayComponent,
+                  save,
+                  setSave,
+                  fileUsed, setFileUsed,
+                  sideBarReload, setSideBarReload,
+                  componentReload, setComponentReload,
+                  isDebug, setIsDebug,
+                  setIsRunning, isRunning,
+                  nodes, setNodes, onNodesChange,
+                  edges, setEdges, onEdgesChange,
+                  history, setHistory,
+                  globalWs, setGlobalWs,
+                  activeNode, setActiveNode,
+                  isDark, setIsDark,
+                }}
+              >
+                <Header />
+                <FullOverlay
+                  Component={overlayComponent.Component}
+                  {...overlayComponent.props}
+                />
+                {cmpByState[appState]}
+              </AppContext.Provider>
+            </ReactFlowProvider>
+          </div>
         </div>
+      </div>
+      <div className="h-full">
+        <ImageWithText />
       </div>
     </div>
   );
