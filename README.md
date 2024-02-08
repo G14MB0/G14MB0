@@ -1,5 +1,5 @@
 
-# Hello, I'm Gianmaria! 👋
+# Hello, I'm Gianmaria! 👋 --> [![LinkedIn][3.2]][3] [![Email][4.2]][4]
 
 <p valign="left" >
 <img src="./gear.png" width="50" align="right" alt="Yellow Gear Icon" />
@@ -59,16 +59,17 @@ It's just an example of presentation of my VisualCoding desktop application (rep
 - [Visual Coding Backend](https://github.com/G14MB0/VisualCoding_backend_public) - The backend (Server, API, database and more) of the visual coding application
 <!-- Add more projects as needed -->
 
-## 📫 How to Reach Me
 
-<!-- Social icons & links -->
-[![LinkedIn][3.2]][3] My Linkedin
+
 
 <!-- Icons -->
-[3.2]: https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/linkedin-3-16.png (LinkedIn icon without padding)
+[3.2]: https://img.shields.io/badge/Linkedin-contact-brightgreen.svg?logo=linkedin&color=blue
+[4.2]: https://img.shields.io/badge/email-contact-brightgreen.svg?logo=gmail&color=red
 
 <!-- Links to your social media accounts -->
 [3]: https://www.linkedin.com/in/gianmaria-castaldini/
+[4]: mailto:castaldini.gianmaria@gmail.com
+
 
 
 <!-- Optional: Any additional sections that you want to include -->
