@@ -11,6 +11,7 @@ import { debounce } from "@mui/material";
 import ImageWithText from "../presentation/components/ImageWithText";
 import { ScreenRotationRounded } from "@mui/icons-material";
 import TechFeatures from "../presentation/components/TechFeatures";
+import Footer from "../presentation/components/Footer";
 
 
 export const AppContext = createContext();
@@ -99,7 +100,7 @@ export default function AppProvider() {
 
   return (
     // Defined the ReactFlowProvider Here to have access to its state everywhere in the appContext
-    <div ref={scrollDivRef} className="overflow-scroll scolatela h-[100vh]">
+    <div ref={scrollDivRef} id="scrollableDiv" className="overflow-scroll scolatela h-[100vh]">
       <div className="h-[1100px] sm:h-[600px]">
         <Presentation />
       </div>
@@ -183,6 +184,7 @@ export default function AppProvider() {
       <div className="h-full">
         <ImageWithText />
         <TechFeatures />
+        <Footer />
       </div>
     </div>
   );

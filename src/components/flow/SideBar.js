@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
 import fetchApi from '../../utils/request/requests';
 import { AppContext } from '../../provider/appProvider';
-import { CloseRounded, DeleteRounded, PublicRounded } from '@mui/icons-material';
+import { PublicRounded } from '@mui/icons-material';
 import Confirm from '../overlay/confirm';
 import { availableNode, nodeStyles } from './nodeDefinition';
 import GlobalVar from '../UI/cards/GlobalVar';

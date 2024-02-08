@@ -3,10 +3,17 @@ import profilePictures from '../../images/profilePicture.png'
 
 export default function Header() {
 
-    const scrollToElementById = (id) => {
-        const element = document.getElementById(id);
-        if (element) {
-            element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    const scrollToElementById = (divId, targetId, marginTop = 0) => {
+        const container = document.getElementById(divId);
+        const element = document.getElementById(targetId);
+        if (container && element) {
+            // Calculate the position of the element within the container
+            const elementTop = element.getBoundingClientRect().top - container.getBoundingClientRect().top;
+            // Scroll to the element with the specified margin
+            container.scrollBy({
+                top: elementTop - marginTop,
+                behavior: 'smooth'
+            });
         }
     };
 
@@ -27,10 +34,10 @@ export default function Header() {
                     />
                 </div>
                 <div className="mx-auto max-w-2xl  py-20">
-                    <div className="hidden sm:mb-8 sm:flex sm:justify-center">
+                    <div className="mb-5 px-5 sm:mb-8 sm:flex sm:justify-center">
                         <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
                             Go to the GitHub Repo.{' '}
-                            <a href="https://github.com/G14MB0/VisualCoding_public" className="font-semibold text-indigo-600">
+                            <a href="https://github.com/G14MB0/VisualCoding_public" className="font-semibold text-indigo-600" target="_blank">
                                 <span className="absolute inset-0" aria-hidden="true" />
                                 Discover More <span aria-hidden="true">&rarr;</span>
                             </a>
@@ -46,13 +53,13 @@ export default function Header() {
                         <div className="mt-10 flex items-center justify-center gap-x-6">
                             <a
                                 href="#"
-                                onClick={() => scrollToElementById('VisualCoding')}
-                                className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                                onClick={() => scrollToElementById('scrollableDiv', 'VisualCoding', 30)}
+                                className="hidden sm:block rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                             >
                                 Get started
                             </a>
                             <a
-                                onClick={() => scrollToElementById('Description')}
+                                onClick={() => scrollToElementById('scrollableDiv', 'Description', 30)}
                                 href="#" className="text-sm font-semibold leading-6 text-gray-900">
                                 Learn more <span aria-hidden="true">→</span>
                             </a>
