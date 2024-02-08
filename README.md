@@ -1,26 +1,19 @@
 <table>
-  <tr>
+<tr>
     <!-- First Column for text -->
-    <td valign="top" width="33%">
+<td valign="top" width="33%">
 
 # Hello, I'm [Your Name]! 👋
 
 I'm a Mechanical Engineer with a passion for Software Development. I specialize in Mechatronics and System Controls, and I love using technology to solve problems and create impactful solutions.
 
-    </td>
-    
-    <!-- Second Column for more text (if needed) or you can merge first and second column content -->
-    <td valign="top" width="33%">
-      <!-- You can continue your introduction here or add any other content you want in the second column -->
-      <!-- If you don't need the second column for text, you can adjust the widths and omit this part. -->
-    </td>
-    
-    <!-- Third Column for a big icon -->
-    <td valign="top" width="34%">
+</td>
+
+<td valign="top" width="34%">
       <!-- Replace `icon_url` with the actual URL to the icon you want to display -->
-      <img src="icon_url" width="100%" alt="Big Icon" />
-    </td>
-  </tr>
+<img src="./gear.png" width="80%" alt="Big Icon" />
+</td>
+</tr>
 </table>
 
 
