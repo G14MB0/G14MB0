@@ -1,17 +1,43 @@
+<table>
+  <tr>
+    <!-- First Column for text -->
+    <td valign="top" width="33%">
+
 # Hello, I'm [Your Name]! 👋
 
-<!-- Personal Introduction -->
-I'm a Mechanical engineer with a passion for Software Developing. I specialize in Mechatronics and System Controls, and I love using technology to solve problems and create impactful solutions.
+I'm a Mechanical Engineer with a passion for Software Development. I specialize in Mechatronics and System Controls, and I love using technology to solve problems and create impactful solutions.
+
+    </td>
+    
+    <!-- Second Column for more text (if needed) or you can merge first and second column content -->
+    <td valign="top" width="33%">
+      <!-- You can continue your introduction here or add any other content you want in the second column -->
+      <!-- If you don't need the second column for text, you can adjust the widths and omit this part. -->
+    </td>
+    
+    <!-- Third Column for a big icon -->
+    <td valign="top" width="34%">
+      <!-- Replace `icon_url` with the actual URL to the icon you want to display -->
+      <img src="icon_url" width="100%" alt="Big Icon" />
+    </td>
+  </tr>
+</table>
 
 
-<!-- Badges -->
-![Followers](https://img.shields.io/github/followers/G14MB0?label=Follow&style=social)
-![Profile Views](https://komarev.com/ghpvc/?username=G14MB0&color=green)
 
 ## 🚀 About Me
 
 <!-- A short bio -->
-I've been working in the tech industry for [Number of Years] years, focusing on [Key Areas of Focus]. I'm passionate about open-source, and I believe in the power of collaboration. In my free time, I enjoy [Hobbies].
+I've been working in the tech industry for 2 years, focusing on software tools for automotive test automation. I have designed and developed many software applications that integrate into test flows, such as:
+
+- Automatic Code Generation & Configuration
+- Big Data Analysis
+- Automatic Report Generation
+- Simulation of real environments integrating commercial software and hardware with my applications
+
+I'm passionate about open-source and believe in the power of collaboration. In my free time, I enjoy learning new skills across a wide range of topics. I have played the piano since I was a child and, because of this, I love all kinds of good music, from Classical to Techno.
+
+I love sharing my knowledge with anyone eager to listen. I may not be the best teacher, but I do it with passion!
 
 ## 🔧 Technologies & Tools
 
