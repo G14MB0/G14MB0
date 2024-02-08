@@ -1,20 +1,11 @@
-<table>
-<tr>
     <!-- First Column for text -->
-<td valign="top" width="33%">
+# Hello, I'm Gianmaria! 👋
 
-# Hello, I'm [Your Name]! 👋
+<p valign="left" >
+<img src="./gear.png" width="50" align="right" alt="Yellow Gear Icon" />
 
-I'm a Mechanical Engineer with a passion for Software Development. I specialize in Mechatronics and System Controls, and I love using technology to solve problems and create impactful solutions.
-
-</td>
-
-<td valign="top"  width="30%" style="padding-left:100px">
-      <!-- Replace `icon_url` with the actual URL to the icon you want to display -->
-<img src="./gear.png" width="40%" alt="Big Icon" />
-</td>
-</tr>
-</table>
+I'm a Mechanical Engineer with a passion for Software Development. I specialize in Mechatronics and System Controls, and I love using technology to solve problems and create impactful solutions. 
+</p>
 
 
 
