@@ -25,6 +25,12 @@ I've been working in the tech industry for [Number of Years] years, focusing on 
 ![](https://img.shields.io/badge/Tools-Arduino-informational?style=flat&logo=arduino&logoColor=white&color=2bbc8a)
 ![](https://img.shields.io/badge/Tools-MATLAB-informational?style=flat&logo=mathworks&logoColor=white&color=2bbc8a)
 ![](https://img.shields.io/badge/Tools-DLL-informational?style=flat&logo=dll-files&logoColor=white&color=2bbc8a)
+![](https://img.shields.io/badge/Code-SQL-informational?style=flat&logo=sql&logoColor=white&color=2bbc8a)
+![](https://img.shields.io/badge/Database-PostgreSQL-informational?style=flat&logo=postgresql&logoColor=white&color=2bbc8a)
+![](https://img.shields.io/badge/Database-SQLite-informational?style=flat&logo=sqlite&logoColor=white&color=2bbc8a)
+![](https://img.shields.io/badge/Cloud-DigitalOcean-informational?style=flat&logo=digitalocean&logoColor=white&color=2bbc8a)
+![](https://img.shields.io/badge/Framework-FastAPI-informational?style=flat&logo=fastapi&logoColor=white&color=2bbc8a)
+
 
 
 ## 📈 GitHub Stats
