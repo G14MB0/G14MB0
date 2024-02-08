@@ -6,7 +6,7 @@ export default function Footer() {
         <div className='flex flex-col sm:flex-row sm:items-start sm:justify-around sm:h-50 border-t mx-10 sm:py-5 pb-4'>
             <div className='sm:w-1/3 sm:mx-12 sm:px-6'>
                 <div className="sm:text-left">
-                    <h1 className="text-sm font-bold tracking-tight text-gray-900 sm:text-lg mt-4 sm:mt-12 sm:mt-0">
+                    <h1 className="text-sm font-bold tracking-tight text-gray-900 sm:text-lg mt-4 mt-12 sm:mt-0">
                         Disclaimer
                     </h1>
                     <p className="mt-2 sm:mt-6 text-sm leading-6 text-gray-600">

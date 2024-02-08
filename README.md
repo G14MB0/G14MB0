@@ -1,4 +1,3 @@
-    <!-- First Column for text -->
 # Hello, I'm Gianmaria! 👋
 
 <p valign="left" >
