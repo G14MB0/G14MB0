@@ -9,9 +9,9 @@ I'm a Mechanical Engineer with a passion for Software Development. I specialize 
 
 </td>
 
-<td valign="top" width="34%">
+<td valign="top"  width="30%" style="padding-left:100px">
       <!-- Replace `icon_url` with the actual URL to the icon you want to display -->
-<img src="./gear.png" width="80%" alt="Big Icon" />
+<img src="./gear.png" width="40%" alt="Big Icon" />
 </td>
 </tr>
 </table>
