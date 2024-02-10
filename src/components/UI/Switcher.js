@@ -30,10 +30,17 @@ export default function Switcher() {
 
 
     const toggleDarkMode = (checked) => {
+        console.log(checked)
         setTheme(colorTheme);
         setDarkSide(checked);
         setIsDark(checked)
     };
+
+    useEffect(() => {
+        console.log(isDark)
+
+    }, [isDark])
+
 
     return (
         <>

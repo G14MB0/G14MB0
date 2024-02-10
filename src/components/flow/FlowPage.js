@@ -502,7 +502,7 @@ export default function FlowPage() {
                 onInit={setReactFlowInstance}
                 onDrop={onDrop}
                 onDragOver={onDragOver}
-                style={{ background: `${isDark ? "#0f172a" : "#f5f7fa"}` }}
+                style={{ background: `${!isDark ? "#f5f7fa" : "#0f172a"}` }}
                 nodeTypes={nodeTypes}
                 edgeTypes={edgeTypes}
                 connectionLineStyle={connectionLineStyle}

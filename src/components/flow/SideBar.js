@@ -96,7 +96,7 @@ export default () => {
 
             </div>
             <div className='h-10'></div>
-            {/* <div className='h-full'></div> */}
+            <div className='h-20'></div>
             <div className='h-10 py-2 flex items-center relative bottom-0 w-[225px] rounded-3xl bg-white/50 px-2 mb-1 shadow-custom2 dark:shadow-custom2white dark:bg-slate-700/50 backdrop-blur-sm backdrop-brightness-70'>
                 <div onClick={handleOpenGlobalVar}>
                     <PublicRounded className='text-gray-900 dark:text-gray-300 cursor-pointer' />

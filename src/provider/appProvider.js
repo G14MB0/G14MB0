@@ -66,7 +66,7 @@ export default function AppProvider() {
   const [activeNode, setActiveNode] = useState({});
 
 
-  const [isDark, setIsDark] = useState({});
+  const [isDark, setIsDark] = useState(false);
 
 
 
