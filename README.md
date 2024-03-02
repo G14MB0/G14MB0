@@ -21,7 +21,7 @@ I've been working in the tech industry for 2 years, focusing on software tools f
 
 I'm passionate about open-source and believe in the power of collaboration. In my free time, I enjoy learning new skills across a wide range of topics. I have played the piano since I was a child and, because of this, I love all kinds of good music, from Classical to Techno.
 
-I love sharing my knowledge with anyone eager to listen. I may not be the best teacher, but I do it with passion!
+I love sharing my knowledge with anyone eager to listen. I am a good teacher and mentor, adept at simplifying complex concepts and encouraging growth and curiosity in others.
 
 ## 🌐 My Github Pages
 It's just an example of presentation of my VisualCoding desktop application (repo pinned below) but is nice! 
