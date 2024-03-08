@@ -25,7 +25,7 @@ I'm passionate about open-source and believe in the power of collaboration. In m
 I love sharing my knowledge with anyone eager to listen. I am a good teacher and mentor, adept at simplifying complex concepts and encouraging growth and curiosity in others.
 
 ## 🌐 My Github Pages
-It's just an example of presentation of my VisualCoding desktop application (repo pinned below) but is nice! 
+It's just presentation of my VisualCoding desktop application (repo pinned below) 
 <a href="https://g14mb0.github.io/G14MB0/" target="_blank"> --> VisualCoding</a>
 
 ## 🔧 Technologies & Tools
