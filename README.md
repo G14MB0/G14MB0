@@ -96,6 +96,7 @@ It's just presentation of my VisualCoding desktop application (repo pinned below
 ## 📚 Highlighted Projects
 
 <!-- Project links -->
+- [Data Saving Server](https://github.com/G14MB0/AuthAndDataManagementInterface) - A IAM and data saving server ready to production that can be used for raw data saving and triangulation
 - [Visual Coding Frontend](https://github.com/G14MB0/VisualCoding_public) - GUI of a complete desktop application to code visually
 - [Visual Coding Backend](https://github.com/G14MB0/VisualCoding_backend_public) - The backend (Server, API, database and more) of the visual coding application
 <!-- Add more projects as needed -->
