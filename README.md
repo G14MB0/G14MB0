@@ -130,8 +130,8 @@ It's just presentation of my VisualCoding desktop application (repo pinned below
 If I need to scale up:
 
 - **CI/CD Pipeline:** GitHub Actions, or GitLab CI/CD.
-- **Monitoring and Logging:** Prometheus for monitoring and Grafana for visualizing metrics, and ELK Stack for logging.
-- **Error Tracking:** Use services like Sentry or Rollbar to capture and track errors in real-time.
+- **Monitoring and Logging:** Prometheus for monitoring and Grafana for visualizing metrics.
+- **Error Tracking:** Custom error live tracking and notification.
 - **Containerization:** Docker.
 - **Backup and Disaster Recovery Plans:** Regularly back up data using DigitalOcean or AWS services.
 
