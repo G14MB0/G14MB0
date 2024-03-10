@@ -112,7 +112,28 @@ It's just presentation of my VisualCoding desktop application (repo pinned below
 [3]: https://www.linkedin.com/in/gianmaria-castaldini/
 [4]: mailto:castaldini.gianmaria@gmail.com
 
+## :clapper: If I were to develop a web app from scratch, currently I would use:
 
+- **Backend logics:** Python
+- **Backend API:** Python FastAPI, Pydantic
+- **API Documentation and Versioning:** Swagger (OpenAPI) for API documentation.
+- **Database:** Postgres (sqlite3 for micro projects)
+- **Database Versioning:** Python Alembic
+- **Identity Access Management (IAM):** Python+Postgres + integration with Google APIs for "login with Google" (on the frontend)
+- **Sensitive data storage and secure login:** HS256 + Bearer Token
+- **Production server:** Ubuntu
+- **Server Hosting:** DigitalOcean / AWS
+- **Reverse Proxy:** NGINX
+- **Frontend:** React + Tailwind
+- **Frontend hosting:** the same way as backend or commercial website hosting (like Firebase)
+
+If I need to scale up:
+
+- **CI/CD Pipeline:** GitHub Actions, or GitLab CI/CD.
+- **Monitoring and Logging:** Prometheus for monitoring and Grafana for visualizing metrics, and ELK Stack for logging.
+- **Error Tracking:** Use services like Sentry or Rollbar to capture and track errors in real-time.
+- **Containerization:** Docker.
+- **Backup and Disaster Recovery Plans:** Regularly back up data using DigitalOcean or AWS services.
 
 <!-- Optional: Any additional sections that you want to include -->
 ## 🌱 I’m currently learning ...
