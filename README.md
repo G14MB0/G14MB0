@@ -16,7 +16,7 @@ I'm a Mechanical Engineer with a passion for Software Development. I specialize 
 I've been working in the tech industry for 2 years, focusing on software tools for automotive test automation. I have designed and developed many software applications that integrate into test flows, such as:
 
 - Automatic Code Generation & Configuration
-- Big Data Analysis
+- IAM and databasing
 - Automatic Report Generation
 - Simulation of real environments integrating commercial software and hardware with my applications
 
@@ -25,7 +25,7 @@ I'm passionate about open-source and believe in the power of collaboration. In m
 I love sharing my knowledge with anyone eager to listen. I am a good teacher and mentor, adept at simplifying complex concepts and encouraging growth and curiosity in others.
 
 ## 🌐 My Github Pages
-It's just presentation of my VisualCoding desktop application (repo pinned below) 
+It's a presentation of my VisualCoding desktop application (repo pinned below) 
 <a href="https://g14mb0.github.io/G14MB0/" target="_blank"> --> VisualCoding</a>
 
 ## 🔧 Technologies & Tools
