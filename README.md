@@ -25,8 +25,11 @@ I'm passionate about open-source and believe in the power of collaboration. In m
 I love sharing my knowledge with anyone eager to listen. I am a good teacher and mentor, adept at simplifying complex concepts and encouraging growth and curiosity in others.
 
 ## 🌐 My Github Pages
-It's a presentation of my VisualCoding desktop application (repo pinned below) 
+- It's a presentation of my **VisualCoding** desktop application (repo pinned below) 
 <a href="https://g14mb0.github.io/G14MB0/" target="_blank"> --> VisualCoding</a>
+- It's the documentation for a desktop **Template-Recognition** application (repo pinned below) 
+<a href="https://g14mb0.github.io/TemplateRecognitionAPI_public/" target="_blank"> --> TemplateRecognition APIs</a>
+
 
 ## 🔧 Technologies & Tools
 
